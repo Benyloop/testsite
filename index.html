@@ -2,16 +2,86 @@
 <html>
 <head>
     <title>GTM Demo Store</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .home-container {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .home-image {
+            flex: 1;
+        }
+
+        .home-image img {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .home-content {
+            flex: 1;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .home-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+
 </head>
 <body>
 
-<h1>Welcome to GTM Demo Store</h1>
+<div class="home-container">
 
-<p>
-Discover our latest products and experience a simple e-commerce journey.
-</p>
+    <div class="home-image">
+        <img src="shoe.jpg" alt="Demo Running Shoes">
+    </div>
 
-<a href="product.html">View Product</a>
+    <div class="home-content">
+
+        <h1>Welcome to GTM Demo Store</h1>
+
+        <p>
+            Discover our latest collection of high-performance footwear designed
+            to deliver exceptional comfort, durability and style.
+        </p>
+
+        <p>
+            Browse products, add items to your cart and complete a checkout flow
+            while exploring how Google Tag Manager can be used to track customer
+            interactions across an e-commerce journey.
+        </p>
+
+        <p>
+            This demo site has been created specifically for testing analytics,
+            event tracking, conversions and marketing tags.
+        </p>
+
+        <a class="cta-btn" href="product.html">
+            View Product
+        </a>
+
+    </div>
+
+</div>
 
 </body>
 </html>
