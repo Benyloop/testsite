@@ -2,31 +2,96 @@
 <html>
 <head>
     <title>Product Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .product-container {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        .product-image {
+            flex: 1;
+        }
+
+        .product-image img {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+        .cta {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .product-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+
 </head>
 <body>
 
-<h1>Demo Running Shoes</h1>
+    <div class="product-container">
 
-<img
-    src="shoe.jpg"
-    alt="Demo Running Shoes"
-    width="350"
->
+        <div class="product-image">
+            <img src="shoe.jpg" alt="Demo Running Shoes">
+        </div>
 
-<p>
-Experience all-day comfort with our lightweight performance running shoes.
-Designed for both training and everyday wear.
-</p>
+        <div class="product-info">
 
-<h2>€99.00</h2>
+            <h1>Demo Running Shoes</h1>
 
-<button id="addToCart">
-    Add to Cart
-</button>
+            <p>⭐⭐⭐⭐⭐ (124 Reviews)</p>
 
-<br><br>
+            <h2>€99.00</h2>
 
-<a href="cart.html">Go to Cart</a>
+            <p>
+                Experience all-day comfort with our lightweight performance
+                running shoes. Designed with a breathable upper and responsive
+                cushioning, they provide the perfect balance of support,
+                durability and style.
+            </p>
+
+            <p>
+                Ideal for daily use, training sessions and casual wear.
+                Built with premium materials and engineered to keep you moving comfortably throughout the day.
+            </p>
+
+            <p>
+                Free shipping on orders over €75.
+            </p>
+
+            <button id="addToCart">
+                Add to Cart
+            </button>
+
+            <br><br>
+
+            <a class="cta" href="cart.html">
+                Go to Cart
+            </a>
+
+        </div>
+
+    </div>
 
 </body>
 </html>
