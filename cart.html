@@ -2,22 +2,85 @@
 <html>
 <head>
     <title>Cart</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .cart-container {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        .cart-image {
+            flex: 1;
+        }
+
+        .cart-image img {
+            width: 100%;
+            max-width: 350px;
+        }
+
+        .cart-details {
+            flex: 1;
+        }
+
+        .checkout-btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .cart-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+
 </head>
 <body>
 
-<h1>Your Cart</h1>
+<div class="cart-container">
 
-<p>
-Demo Running Shoes
-</p>
+    <div class="cart-image">
+        <img src="shoe.jpg" alt="Demo Running Shoes">
+    </div>
 
-<p>
-Price: €99.00
-</p>
+    <div class="cart-details">
 
-<a href="checkout.html">
-    Proceed to Checkout
-</a>
+        <h1>Your Cart</h1>
 
-</body>
-</html>
+        <h2>Demo Running Shoes</h2>
+
+        <p>
+            Lightweight performance footwear designed for everyday comfort.
+        </p>
+
+        <p>
+            Quantity: 1
+        </p>
+
+        <p>
+            Price: €99.00
+        </p>
+
+        <hr>
+
+        <h3>Order Summary</h3>
+
+        <p>Subtotal: €99.00</p>
+        <p>Shipping: Free</p>
+
+        <h2>Total: €99.00</h2>
+
+        <a class="checkout-btn" href="checkout.html">
+        tml>
